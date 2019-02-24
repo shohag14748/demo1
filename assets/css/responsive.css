@@ -1,0 +1,130 @@
+	@media (max-width:992px){
+		section.navigation{
+			margin-left: 0;
+			width: 73px;
+		}
+		section.navigation .menu li{
+			width: 53px;
+			transition: .5s;
+		}
+		section.navigation .menu li a span{
+			display: none;
+		}
+		
+		/*-------- Left Menu responsive ---------*/
+		
+		section.navigation.collapse-open{
+			width: 160px;
+			background: rgba(0,0,0,.9);
+			z-index: 999;
+		}
+		section.navigation.collapse-open .menu li{
+			width: 140px;
+			overflow: hidden;
+		}
+		.collapse-open .menu span{
+			display: block !important;
+		}
+		.collapse-button{
+			display: block;
+			position: absolute;
+			top: -30px;
+			height: 30px;
+			width: 30px;
+			text-align: center;
+			line-height: 30px;
+			left: 36.5px;
+			transform: translate(-50%);
+			color: #30b3bb;
+			border-radius: 50%;
+			background: #fff;
+			font-size: 20px;
+			cursor: pointer;
+			transition: .3s;
+		}
+		.rotate{
+			transform: rotate(179deg);
+		}
+		section.main-content .wrapper{
+			margin: 0 3vw 0 0;
+			padding-left: 83px;
+			transition: .5s;
+		}
+		
+		
+	}
+	@media (max-width:768px){
+		section.navigation{
+			left: -73px;
+			transition: .5s;
+		}
+		section.navigation.collapse-open{
+			left: 0px;
+		}
+		.collapse-button{
+			left: 75px;
+		}
+		section.navigation.collapse-open .collapse-button{
+			left: 36.5px;
+		}
+		section.main-content .wrapper{
+			margin: 0 3vw 0;
+			padding-left: 0px;
+			transition: .5s;
+		}
+		
+		
+		.main-content .top-navigation{
+			flex-direction: column;
+		}
+		.main-content .top-navigation .nav{
+			justify-content: center;
+		}
+		.main-content .top-navigation .button a{
+			width: 100%;
+			text-align: center;
+		}
+		.main-content .top-navigation .nav{
+			width: 100%;
+		}
+		.body .navigation{
+			min-width: 50px;
+		}
+		.main-content .top-navigation .button{
+			margin-right: 0px;
+		}
+		.main-content .nav  li a{
+			margin-top: 10px
+		}
+		.main-content .nav  li a{
+			padding: 10px 15px;
+			}
+@media (max-width:576px){
+	
+	header.header .menu>ul>li{
+		margin-left: 0px;
+		padding: 0 4px 5px;
+	}
+	header.header .menu>ul>li:last-child{
+		margin-left: 10px;
+		margin-right: 0;
+		padding-right: 0;
+	}
+	header.header .menu>ul>li:last-child::before{
+		left: -10px
+	}
+	.ideas h3{
+		margin-top: 25px
+	}
+	.ideas .circle{
+        	justify-content: center;
+	}              
+	.ideas .circle .single .text {
+		margin:10px 20px;
+	}
+	.buttons a{
+		width: 100%;
+		margin-right: 0;
+	}
+	
+}
