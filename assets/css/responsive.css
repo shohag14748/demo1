@@ -99,7 +99,19 @@
 		}
 		.main-content .nav  li a{
 			padding: 10px 15px;
-			}
+		}
+		
+		
+		.map-view .map img{
+			margin-left: 0%;
+		}
+		.about-the-place{
+			justify-content: center;
+		}
+		.location{
+			margin-top: 0px;
+		}
+}
 @media (max-width:576px){
 	
 	header.header .menu>ul>li{

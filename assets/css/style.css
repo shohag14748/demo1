@@ -569,3 +569,107 @@ section.main-content .wrapper{
 
 
 
+
+
+
+/*----------- map-view ----------- */
+
+
+
+.map-view .map{
+	position: relative;
+}
+.map-view .map img{
+	margin-left: -10%
+}
+.circle-ripple {
+	 position: absolute;
+	 background-color: rgb(213, 219, 219);
+	 width: 2.8%;
+	 height: 2.6%;
+	 border-radius: 50%;
+	 -webkit-animation: ripple 1s linear infinite;
+	 animation: ripple 1s linear infinite;
+	 transition:1s;
+	}
+
+	@-webkit-keyframes ripple {
+	  0% {
+		box-shadow: 0 0 0 0 rgba(213, 219, 219, .6), 0 0 0 10px rgba(213, 219, 219, 0.4), 0 0 0 20px rgba(213, 219, 219, 0.2);
+	  }
+	  100% {
+		box-shadow: 0 0 0 10px rgba(213, 219, 219, 0.4), 0 0 0 20px rgba(213, 219, 219, 0.2), 0 0 0 30px rgba(213, 219, 219, 0);
+	  }
+	}
+.map-view .map .location .circle-ripple:nth-child(1){
+	top: 38.3%;
+	right: 27.4%
+}
+.map-view .map .location .circle-ripple:nth-child(2){
+	top: 43.6%;
+	right: 61.9%
+}
+.map-view .map .location .circle-ripple:nth-child(3){
+	top: 40.3%;
+	right: 44%;
+	background: rgb(72,191,193);
+	-webkit-animation: ripple2 1s linear infinite;
+	 animation: ripple2 1s linear infinite;
+}
+@-webkit-keyframes ripple2 {
+	  0% {
+		box-shadow: 0 0 0 0 rgba(72,191,193, .6), 0 0 0 10px rgba(72,191,193, 0.4), 0 0 0 20px rgba(72,191,193, 0.2);
+	  }
+	  100% {
+		box-shadow: 0 0 0 10px rgba(72,191,193, 0.4), 0 0 0 20px rgba(72,191,193, 0.2), 0 0 0 30px rgba(72,191,193, 0);
+	  }
+	}
+
+
+
+
+.about-the-place{
+	display: flex;
+	
+}
+.about-the-place .wrap{
+	text-align: left;
+	border: 1px solid #bbbec0;
+	border-radius: 20px;
+	padding: 10px 25px;
+}
+.about-the-place .wrap p{
+	font-size: 14px;
+	font-weight: 500;
+	color: rgba(0,0,0,.4);
+	margin-bottom: 10px;
+}
+.about-the-place .wrap p span{
+	display: block;
+	color: rgba(0,0,0,.6);
+}
+
+
+.location{
+	margin-bottom: 20px;
+	margin-top: -30px;
+	margin-left: 10px;
+}
+.location p span{
+	font-size: 14px;
+	color: rgba(0,0,0,.6);
+	margin-left: 23px
+}
+.location p{
+	font-size: 16px;
+	color: rgba(0,0,0,.9);
+	font-weight: 500;
+	margin-bottom: 0px;
+}
+.location p i{
+	margin-right: 10px;
+	color: rgba(0,0,0,.6);
+}
+
+
+
