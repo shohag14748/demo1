@@ -359,15 +359,16 @@ section.main-content .wrapper{
     font-size: 14px;
 }
 .main-content .nav  li a{
-    border-top-left-radius: 10px;
-    border-top-right-radius: 10px;
+    border-top-left-radius: 11px;
+    border-top-right-radius: 11px;
     transition: .5s;
 	font-family: "Galano Grotesque";;
 }
 .main-content .nav li a.active,
 .main-content .nav li a:hover{
     background: rgba(255,255,255,.4);
-	transition: .7s;
+	transition: .6s;
+	
 }
 
 
