@@ -584,7 +584,8 @@ section.main-content .wrapper{
 	position: relative;
 }
 .map-view .map img{
-	margin-left: -10%
+	margin-left: -10%;
+		width: 100%;
 }
 .circle-ripple {
 	 position: absolute;
