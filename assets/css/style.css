@@ -1,16 +1,49 @@
 /*-------- Fonts ---------*/
+
 @font-face {
-  font-family: gg;
-  src: url('../fonts/Galano%20Grotesque%20DEMO%20Bold.otf');
+    font-family: "Galano Grotesque";
+	font-weight: 900;
+	src: url(../font/Galano%20Grotesque%20Bold.otf);
+}@font-face {
+    font-family: "Galano Grotesque";
+	font-weight: 700;
+/*	src: url(../font/Galano%20Grotesque%20Bold.otf);*/
+	src: url(../font/GlacialIndifference-Bold.otf);
+}@font-face {
+    font-family: "Galano Grotesque";
+	font-weight: 500;
+	src: url(../font/Galano%20Grotesque%20Medium.otf);
+}@font-face {
+    font-family: "Galano Grotesque";
+	font-weight: 400;
+	src: url(../font/Galano%20Grotesque%20Light.otf);
 }
+
 @font-face {
-  font-family: ii;
-  src: url('../fonts/GlacialIndifference-Regular.otf')
+    font-family: "Galano Grotesque Alt";
+	font-weight: 700;
+/*	src: url('../font/Galano%20Grotesque%20Alt%20Bold.otf');*/
+	src: url('../font/Galano%20Grotesque%20Alt%20Semi%20Bold.otf');
+}@font-face {
+    font-family: "Galano Grotesque Alt";
+	font-weight: 500;
+	src: url('../font/Galano%20Grotesque%20Alt%20Medium.otf');
+}@font-face {
+    font-family: "Galano Grotesque Alt";
+	font-weight: 400;
+	src: url('../font/Galano%20Grotesque%20Alt%20Light.otf');
 }
+
+
+
+
 /*-------- General ---------*/
 *{
     margin: 0;padding: 0;
+	font-family: "Galano Grotesque";
+	
 }
+
 body{
     background: #f2f6f9;
 }
@@ -18,8 +51,9 @@ a:hover{
     text-decoration: none;
 }
 a,p{
-    font-family: ii;
 	font-size: 16px;
+	font-family: "Galano Grotesque";
+	font-weight: 400;
 }
 h2{
 	font-size: 25px;
@@ -41,19 +75,22 @@ header.header{
 /*-------- Header Logo ---------*/ 
 
 header.header .logo a{
-    font-family: ii;
+    font-family: "Galano Grotesque Alt";
     color: #fff;
     font-size: 20px;
     text-shadow: 1px 5px 50px #555;
+	font-weight: 500;
 }
 header.header .logo span{
     color: #30b3bb;
-    font-family: gg;
+    font-family: "Galano Grotesque";
+	font-weight: 700;
     background: #fff;
-    padding: 0 7px;
+    padding: 2px 7px;
     border-radius: 5px;
     text-shadow: none;
     box-shadow: 0px 3px 58.28px 3.72px rgba(0, 0, 0, 0.2);
+	display: 
 }
 
 /*-------- Header Menu ---------*/ 
@@ -87,7 +124,7 @@ header.header .menu>ul>li:first-child>a::before{
     position: absolute;
     border-radius: 50%;
     right: -4px;
-    top: -2px;
+    top:px;
 }
 header.header .menu>ul>li img{
     width: 22px;
@@ -113,7 +150,6 @@ header.header .menu>ul>li:last-child img{
     top: 100%;
     transition: .7s;
 	right: 0;
-	
 }
 header.header .menu>ul>li:hover .dropdown{
     display:block;
@@ -134,7 +170,6 @@ header.header .menu>ul>li:hover .dropdown{
 }
 .dropdown h4{
     margin: 0;font-size: 15px;
-    font-family: gg;
     text-transform: capitalize;
     color: #1da7b3;
 }
@@ -177,7 +212,7 @@ header.header .menu>ul>li:last-child .dropdown li{
 section.navigation{
     padding:5px 10px;
 	margin-left: 3vw;
-	width: 160px;
+	width: 180px;
 	transition: .5s;
 	position: absolute;
 	z-index: 99999;
@@ -195,19 +230,21 @@ section.navigation .menu li{
 section.navigation .menu li a{
     display: flex;
     align-items: center;
-    padding:6px 15px;
+    padding:3px 15px 7px;
     border-radius: 50px;
     color: #fff;
     transition: .5s;
+	font-weight: 500;
 }
 section.navigation .menu li a.active,
 section.navigation .menu li a:hover{
     background: rgba(255,255,255,.4);
 }
 section.navigation .menu li a img{
-    width: 24px;
-    height: 24px;
+    width: 20px;
+    height: 20px;
     margin-right: 10px;
+	margin-top: 3px
 }
 .collapse-button{
 	display: none;
@@ -227,7 +264,7 @@ section.main-content{
 }
 section.main-content .wrapper{
 	margin: 0 3vw 0;
-	padding-left: 200px;
+	padding-left: 220px;
 	transition: .5s;
 }
 
@@ -260,13 +297,13 @@ section.main-content .wrapper{
     font-size: 16px;
     color: #fff;
     background: rgba(255,255,255,.4);
-    padding: 10px 30px;
+    padding: 8px 30px 13px;
     border-radius: 50px;
     box-shadow: 0px 3px 58.28px 3.72px rgba(0, 0, 0, 0.1);
+	
 }
 .main-content .search input::placeholder{
     color: #fff;
-    font-family: ii;
 }
 .main-content .search img{
     position: absolute;top: 50%;
@@ -294,8 +331,7 @@ section.main-content .wrapper{
 .main-content .top-navigation .button a{
     background: #fff;
     color: #32b4ba;
-    font-family: gg;
-    padding: 10px 40px;
+    padding: 8px 40px 13px;
     border-radius: 50px;
     font-size: 16px;
     display: block;
@@ -304,6 +340,7 @@ section.main-content .wrapper{
     width: 100%;
     text-align: center;
 	transition: .5s;
+	font-weight: 500;
 }
 .main-content .top-navigation .button a:hover{
 	background: rgba(255,255,255,.5);
@@ -321,6 +358,7 @@ section.main-content .wrapper{
 .main-content .nav  li a{
     border-radius: 10px;
     transition: .5s;
+	font-family: "Galano Grotesque";;
 }
 .main-content .nav li a:hover{
     background: rgba(255,255,255,.4);
@@ -335,7 +373,6 @@ section.main-content .wrapper{
 }
 .main-content .shortdetails h3{
     color: #fff;
-    font-family: gg;
 }
 .main-content .shortdetails p{
   font-size: 14px;
@@ -344,7 +381,8 @@ section.main-content .wrapper{
 }
 .main-content .shortdetails p span{
     color: #fff;
-    margin-left: 40px;
+	margin-left: 10px;
+	font-size: 14px;
 }
 
 
@@ -364,7 +402,6 @@ section.main-content .wrapper{
     width: 100%;
 }
 .ideas h3{
-    font-family: gg;
     font-size: 20px;
     position: relative;
     margin-top: 10px;
@@ -373,10 +410,11 @@ section.main-content .wrapper{
     max-width: 500px;
     color: rgba(0,0,0,.5);
     margin: 0;
+	font-size: 14px;
 }
 .ideas h3 span{
     font-size: 14px;
-    color: rgba(0,0,0,.5);
+    color: rgba(0,0,0,.3);
     margin-left: 30px;
     position: relative;
 }
@@ -386,11 +424,11 @@ section.main-content .wrapper{
     color: #2d5759;
     background-color: rgb(214, 220, 225);
     font-size: 15px;
-    padding: 4px 30px;
+    padding: 2px 30px 5px;
     border-radius: 30px;
     top: -10px;
 	cursor: pointer;
-	font-family: ii;
+	font-weight: 500;
 }
 
 .ideas h3 span::after{
@@ -401,7 +439,7 @@ section.main-content .wrapper{
     position: absolute;
     border-radius: 50%;
     left: -17px;
-    top: 7px
+    top: 11px
 }
 
 .ideas .circle{
@@ -425,9 +463,9 @@ section.main-content .wrapper{
 }
 .ideas .circle .single h2{
     font-size: 25px;
-    font-family: gg;
     margin-bottom: 0;
-    color: rgb(96, 195, 124);   
+    color: rgb(96, 195, 124);
+	font-weight: 900
 }
 .ideas .circle .single:nth-child(2) h2{
   color: rgb(90, 167, 215);
@@ -437,8 +475,9 @@ section.main-content .wrapper{
 }
 .ideas .circle .single p{
     line-height: 18px;
-    font-size: 16px;
+    font-size: 11px;
     margin-bottom: 0;
+	text-transform: uppercase
 }
 .ideas .circle .right{
     display: flex;
@@ -457,15 +496,15 @@ section.main-content .wrapper{
 }
 .ideas .circle .right p{
     width: 150px;
-    font-size: 18px;
+    font-size: 14px;
     margin-bottom: 0;
     color: #000;
+	font-weight: 500;
 }
 .ideas .circle .right h6{
     margin-bottom: 0;
-    font-size: 14px;
-    font-family: gg;
-    color: rgba(0,0,0,.5);
+    font-size: 12px;
+    color: rgba(0,0,0,.4);
 }
 .ideas .circle .right img{
     margin-right: 20px;
@@ -476,7 +515,7 @@ section.main-content .wrapper{
     flex-flow: wrap;
 }
 .buttons a{
-    padding: 10px 20px 8px;
+    padding: 6px 20px 10px;
     display: block;
     border-radius: 30px;
     min-width: 120px;
@@ -488,6 +527,7 @@ section.main-content .wrapper{
     box-shadow: 0px 5px 20px rgba(0, 0, 0, 0.2);
     margin-top: 20px;
 	transition: .7s;
+	font-weight: 500;
 }
 .buttons a:nth-child(1){
   background-color: rgb(70, 179, 186);

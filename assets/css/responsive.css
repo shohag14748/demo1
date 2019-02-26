@@ -1,10 +1,10 @@
 	@media (max-width:992px){
 		section.navigation{
 			margin-left: 0;
-			width: 73px;
+			width: 70px;
 		}
 		section.navigation .menu li{
-			width: 53px;
+			width: 50px;
 			transition: .5s;
 		}
 		section.navigation .menu li a span{
@@ -14,12 +14,12 @@
 		/*-------- Left Menu responsive ---------*/
 		
 		section.navigation.collapse-open{
-			width: 160px;
+			width: 180px;
 			background: rgba(0,0,0,.9);
 			z-index: 999;
 		}
 		section.navigation.collapse-open .menu li{
-			width: 140px;
+			width: 160px;
 			overflow: hidden;
 		}
 		.collapse-open .menu span{
@@ -32,10 +32,11 @@
 			height: 30px;
 			width: 30px;
 			text-align: center;
-			line-height: 30px;
+			line-height: 31px;
 			left: 36.5px;
 			transform: translate(-50%);
 			color: #30b3bb;
+			font-weight: 700;
 			border-radius: 50%;
 			background: #fff;
 			font-size: 20px;
@@ -47,7 +48,7 @@
 		}
 		section.main-content .wrapper{
 			margin: 0 3vw 0 0;
-			padding-left: 83px;
+			padding-left: 80px;
 			transition: .5s;
 		}
 		
